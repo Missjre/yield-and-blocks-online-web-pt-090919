@@ -8,12 +8,12 @@ def returns_to_original
       = (names)
   end
 
-  it "is not hard-coded" do
+  def hello_t(other_names)
     other_names = ["Ali", "Jasmine", "Persephone"]
 
-    expect{ hello_t(other_names){ |name| puts name.upcase } }
-      .to output("ALI\nJASMINE\nPERSEPHONE\n")
-      .to_stdout
+    puts { hello_t(other_names){ |name| puts name.upcase } }
+      = ("ALI\nJASMINE\nPERSEPHONE\n")
+      .each do
   end
 
   it "fails gracefully when a block is not passed in" do
