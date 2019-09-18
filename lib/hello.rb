@@ -1,6 +1,6 @@
 def hello_t
-  puts ["Tim", "Tom", "Jim"].each do |name|
-    puts "Hi,#{name}"
+  ["Tim", "Tom", "Jim"].each do |name|
+    puts "Hi, #{name}"
   end
 
   it "calls the block once for each element in the passed-in array" do
