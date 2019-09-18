@@ -1,10 +1,5 @@
 def hello_t(array)
- i = 0 
- 
- while i  < array.length
-    i = i + 1
-  end
-
+ array = 
   it "calls the block once for each element in the passed-in array" do
     expect{ hello_t(names){ |name| puts name } }
       .to output("Tim\nTom\nJim\n")
