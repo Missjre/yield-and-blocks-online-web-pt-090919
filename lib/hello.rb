@@ -1,5 +1,5 @@
 def hello_t(array)
- array = ["Tim", "Tom", "Jim"] 
+ array = ["Tim", "Tom", "Jim"].each do 
     array{ hello_t(names){ |name| puts name }=("Tim\nTom\nJim\n")
   end
 
