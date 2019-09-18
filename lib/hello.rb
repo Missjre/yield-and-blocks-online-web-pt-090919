@@ -1,11 +1,6 @@
 def hello_t(array)
  array = ["Tim", "Tom", "Jim"] 
     array{ hello_t(names){ |name| puts name }=("Tim\nTom\nJim\n")
-      .to_stdout
-  it "calls the block once for each element in the passed-in array" do
-    expect{ hello_t(names){ |name| puts name } }
-      .to output("Tim\nTom\nJim\n")
-      .to_stdout
   end
 
   it "returns the original array" do
