@@ -3,9 +3,9 @@ def hello_t(array)
     array{ hello_t(names){ |name| puts name }=("Tim\nTom\nJim\n")
   end
 
-  it "returns the original array" do
-    expect( hello_t(names){ |name| puts name } )
-      .to eq(names)
+def returns_to_original
+    returns_to_original( hello_t(names){ |name| puts name } )
+      = (names)
   end
 
   it "is not hard-coded" do
